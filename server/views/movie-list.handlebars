@@ -1,0 +1,14 @@
+<h2>Peliculas</h2>
+<hr>
+
+<section class="gallery">
+  {{#each movie}}
+
+  <article class="movie-preview">
+
+    <a href="/movie/{{id}}" class="movie-title"> {{title}} ({{year}})</a>
+    <img src="{{cover}}" alt="{{title}}">
+
+  </article>
+  {{/each}}
+</section>

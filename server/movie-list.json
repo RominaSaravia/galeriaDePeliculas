@@ -1,0 +1,155 @@
+[
+  {
+    "id": 1,
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "cover": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "director": "Peter Jackson",
+    "topCast": [
+      "Elijah Wood",
+      "Ian McKellen",
+      "Viggo Mortensen",
+      "Orlando Bloom",
+      "Christopher Lee",
+      "Cate Blanchett",
+      "Hugo Weaving"
+    ],
+    "IMDB": "https://www.imdb.com/title/tt0120737/"
+  },
+  {
+    "id": 2,
+    "title": "V for Vendetta",
+    "year": 2005,
+    "cover": "https://m.media-amazon.com/images/M/MV5BOTI5ODc3NzExNV5BMl5BanBnXkFtZTcwNzYxNzQzMw@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "director": "James McTeigue",
+    "topCast": [
+      "Natalie Portman",
+      "Hugo Weaving",
+      "John Hurt"
+    ],
+    "IMDB": "https://www.imdb.com/title/tt0434409/"
+  },
+  {
+    "id": 3,
+    "title": "Joker",
+    "year": 2019,
+    "cover": "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "director": "Todd Philips",
+    "topCast": [
+      "Joanquin Phoenix",
+      "Robert DeNiro",
+      "Brett Cullen"
+    ],
+    "IMDB": "https://www.imdb.com/title/tt7286456"
+  },
+  {
+    "id": 4,
+    "title": "Hellraiser",
+    "year": 1987,
+    "cover": "https://m.media-amazon.com/images/M/MV5BMTkyNzc4NjkwNV5BMl5BanBnXkFtZTgwNzI2Mjc1MDE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "director": "Clive Barker",
+    "topCast": [
+      "Andrew Robinson",
+      "Clare Higgins",
+      "Ashley Laurence"
+    ],
+    "IMDB": "https://www.imdb.com/title/tt0093177/"
+  },
+  {
+    "id": 5,
+    "title": "The Evil Dead",
+    "year": 1981,
+    "cover": "https://m.media-amazon.com/images/M/MV5BODc2MmVjZmUtNjAzMS00MDNiLWIyM2YtOGEzMjg0YjRhMzRmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "director": "Sam Raimi",
+    "topCast": [
+      "Bruce Campbell",
+      "Ellen Sandweiss",
+      "Richard DeManincor"
+    ],
+    "IMDB": "https://www.imdb.com/title/tt0083907"
+  },
+  {
+    "id": 6,
+    "title": "A Nightmare on Elm Street",
+    "year": 1984,
+    "cover": "https://m.media-amazon.com/images/M/MV5BNzFjZmM1ODgtMDBkMS00NWFlLTg2YmUtZjc3ZTgxMjE1OTI2L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "director": "Wes Craven",
+    "topCast": [
+      "Heather Langenkamp",
+      "Johnny Depp",
+      "Robert Englund"
+    ],
+    "IMDB": "https://www.imdb.com/title/tt0087800"
+  },
+  {
+    "id": 7,
+    "title": "Scream",
+    "year": 1996,
+    "cover": "https://m.media-amazon.com/images/M/MV5BMjA2NjU5MTg5OF5BMl5BanBnXkFtZTgwOTkyMzQxMDE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "director": "Wes Craven",
+    "topCast": [
+      "Neve Campbell",
+      "Courteney Cox",
+      "David Arquette"
+    ],
+    "IMDB": "https://www.imdb.com/title/tt0117571"
+  },
+  {
+    "id": 8,
+    "title": "The Witches",
+    "year": 1990,
+    "cover": "https://m.media-amazon.com/images/M/MV5BMjI1MDg5NzAyMV5BMl5BanBnXkFtZTgwNzU5Mzk4NjE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "director": "Nicolas Roeg",
+    "topCast": [
+      "Anjelica Huston",
+      "Mai Zetterling",
+      "Jasen Fisher",
+      "Rowan Atkinson",
+      "Bill Paterson",
+      "Brenda Blethyn"
+    ],
+    "IMDB": "https://www.imdb.com/title/tt0100944/"
+  },
+  {
+    "id": 9,
+    "title": "Hocus Pocus",
+    "year": 1993,
+    "cover": "https://m.media-amazon.com/images/M/MV5BMWUxNWI0YTYtY2RiZS00ZjNmLTg4ZGUtNDI0Mzk4NmQ5NWE5XkEyXkFqcGdeQXVyNjk1Njg5NTA@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "director": "Kenny Ortega",
+    "topCast": [
+      "Bette Midler",
+      "Sarah Jessica Parker",
+      "Kathy Najimy",
+      "Omri Katz",
+      "Thora Birch",
+      "Vinessa Shaw"
+    ],
+    "IMDB": "https://www.imdb.com/title/tt0107120/"
+  },
+  {
+    "id": 10,
+    "title": "The Nightmare Before Christmas",
+    "year": 1993,
+    "cover": "https://m.media-amazon.com/images/M/MV5BNWE4OTNiM2ItMjY4Ni00ZTViLWFiZmEtZGEyNGY2ZmNlMzIyXkEyXkFqcGdeQXVyMDU5NDcxNw@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "director": "Henry Selick",
+    "topCast": [
+      "Danny Elfman",
+      "Chris Sarandon",
+      "Catherine O'Hara"
+    ],
+    "IMDB": "https://www.imdb.com/title/tt0107688/"
+  },
+  {
+    "id": 11,
+    "title": "WALL·E",
+    "year": 2008,
+    "cover": "https://m.media-amazon.com/images/M/MV5BMjExMTg5OTU0NF5BMl5BanBnXkFtZTcwMjMxMzMzMw@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "director": "Andrew Stanton",
+    "topCast": [
+      "Ben Burtt",
+      "Elissa Knight",
+      "Jeff Garlin"
+    ],
+    "IMDB": "https://www.imdb.com/title/tt0910970/"
+  }
+]

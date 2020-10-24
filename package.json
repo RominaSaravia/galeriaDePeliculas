@@ -1,0 +1,15 @@
+{
+  "name": "galeriadepeliculas",
+  "version": "1.0.0",
+  "description": "Galeria de peliculas",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "author": "Romina Saravia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0"
+  }
+}
