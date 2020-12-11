@@ -77,7 +77,18 @@ footer{
   background-color: #001b47;
 }
 
-
+/***** vista lista de Peliculas *****/
+.sort-by {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  margin: auto;
+}
+.sort-by button {
+  padding: 0.5rem;
+  margin: auto;
+  border-radius: 1rem;
+}
 .gallery {
   padding: 1rem;
   display: flex;

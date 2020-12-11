@@ -1,4 +1,10 @@
 <h2>Peliculas</h2>
+
+<section class="sort-by">
+<button onclick="sortByName()">Ordenar por nombre</button>
+<button>Ordenar por año</button>
+</section>
+
 <hr>
 
 <section class="gallery">
@@ -6,9 +12,17 @@
 
   <article class="movie-preview">
 
-    <a href="/movie/{{id}}" class="movie-title"> {{title}} ({{year}})</a>
-    <img src="{{cover}}" alt="{{title}}">
+    <a href="/movie/A-Z/{{this.id}}" class="movie-title"> {{this.title}} ({{this.year}})</a>
+    <img src="{{this.cover}}" alt="{{this.title}}">
 
   </article>
   {{/each}}
 </section>
+
+<script>
+  function sortByName() {
+    window.location.href = `/movie/A-Z/`
+  }
+
+  
+</script>
