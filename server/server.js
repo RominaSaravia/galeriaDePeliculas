@@ -99,7 +99,7 @@ const getMovieList = (Cb) => {
 
 
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`Server iniciado: http://localhost:${PORT}`)
 
 });
