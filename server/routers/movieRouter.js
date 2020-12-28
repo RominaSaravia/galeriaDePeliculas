@@ -26,6 +26,7 @@ movieRouter.get("/:sortby/:yearsortby/", (req, res) => {
     return
   }
 
+  //ASC
   if (req.params.yearsortby == "ASC") {
     movie.getMovieList((list) => {
 

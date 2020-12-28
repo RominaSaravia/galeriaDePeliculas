@@ -2,17 +2,17 @@
 
   <div class="byName">
   {{#if sorted}}
-  <button onclick="sortByName('{{sorted}}')">Ordenar por Nombre</button>
+  <button onclick="sortByName('{{sorted}}')">Nombre {{sorted}}</button>
   {{else}}
-  <button onclick="sortByName('ASC')">Ordenar por Nombre</button>
+  <button onclick="sortByName('DESC')">Nombre</button>
   {{/if}}
   </div>
 
 <div class="byYear"> 
   {{#if yearsorted}}
-  <button onclick="sortByYear('{{yearsorted}}')">Ordenar por Nombre</button>
+  <button onclick="sortByYear('{{yearsorted}}')">Año {{yearsorted}}</button>
   {{else}}
-  <button onclick="sortByYear('ASC')">Ordenar por Nombre</button>
+  <button onclick="sortByYear('DESC')">Año</button>
   {{/if}}
 </div>
 
@@ -22,7 +22,7 @@
 <section class="gallery container-fluid p-0">
   <div class="row justify-content-center">
   {{#each movie}}
-  <article class="movie-preview  col-3" >
+  <article class="movie-preview  col-2" >
 
     <a href="/movie/a-z/0-9/{{this.id}}" class="movie-title"> {{this.title}} ({{this.year}})</a>
     <img src="{{this.cover}}" alt="{{this.title}}">
