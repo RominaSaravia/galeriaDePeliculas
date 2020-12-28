@@ -1,23 +1,28 @@
 <h2>Detalles</h2>
 <hr>
 
-<section class="show-detail">
-  <article class="movie-cover">
-    <img src="{{movieFound.cover}}" alt="{{movieFound.title}}">
-  </article>
-  <article class="movie-detail">
-    <h3>{{movieFound.title}} ({{movieFound.year}})</h3>
-    <p>Director: {{movieFound.director}}</p>
+<section class="show-detail container">
+  <div class="row justify-content-between">
 
-    <p>Reparto:</p>
-    <ul class="topCast">
+    <article class="movie-cover col-4">
+      <img src="{{movieFound.cover}}" alt="{{movieFound.title}}">
+    </article>
 
-      {{#each movieFound.topCast}}
-      <li>{{this}}</li>
-      {{/each}}
+    <article class="movie-detail col-8">
+      <h3>{{movieFound.title}} ({{movieFound.year}})</h3>
+      <p>Director: {{movieFound.director}}</p>
 
-    </ul>
+      <p>Reparto:</p>
+      <ul class="topCast">
 
-    <a href="{{movieFound.IMDB}}" target="_blank">IMDB</a>
-  </article>
+        {{#each movieFound.topCast}}
+        <li>{{this}}</li>
+        {{/each}}
+
+      </ul>
+
+      <a href="{{movieFound.IMDB}}" target="_blank">IMDB</a>
+    </article>
+
+  </div>
 </section>

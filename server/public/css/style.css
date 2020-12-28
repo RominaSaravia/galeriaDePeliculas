@@ -4,61 +4,86 @@
   margin: 0;
   font-family: 'Asap', sans-serif;
 }
-hr {
-  height:4px;
-  border-width:0;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: 2rem;
-  margin-right: 2rem;
 
-  color:#d4d4d4;
-  background-color:#d4d4d4;
-
-}
-.container {
-  min-height: 100vh;
+.main-container{
+  min-height: 750px;
 }
 
-nav {
-  padding: 1rem;
+.section-footer{
+  position: relative;
+  bottom: 0;
+  margin: 2rem 0 0 0;
+  color: #ffffff;
   background-color: #001b47;
 }
 
-nav ul {
-  display: flex;
-  justify-content: flex-end;
+.section-footer a {
+  text-decoration: none;
+  color: rgb(224, 1, 1);
 }
 
-nav li {
+.footer-text {
   padding: 1rem;
+}
+
+.mainNav {
+  background-color: #001b47;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	align-content: stretch;
+}
+.mainNav h2 {
+  padding:2rem 0.5rem;
+  color: #ffffff;
+}
+
+.mainNav-ul {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+	align-content: stretch;
+}
+
+.mainNav li {
   list-style: none;
 }
 
-nav li:hover {
-  background-color: red;
+.mainNav a:hover {
+  padding: 1rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  background-color: rgb(224, 1, 1);
+  color: #ffffff;
 }
 
-nav a{
+.mainNav a{
+  padding: 1rem;
   font-size: 1rem;
   text-decoration: none;
   color: #ffffff;
 }
 
-.movie-detail a{
-  font-size: 1rem;
-  text-decoration: none;
-  color: #00a0a3;
-}
-
 .greetings {
+  width: fit-content;
   margin: 2rem auto;
-  width: 50%;
-  padding: 2rem;
-  background-color: #8fbaff;
+  padding: 2rem 0;
+  background-color: #b0ceff;
   border-radius: 1rem;
 
   text-align: center;
+}
+
+.greetings a {
+  padding: 1rem;
+  color:rgb(224, 1, 1);
+  text-decoration: none;
+}
+
+.greetings h2 {
+  text-align: center;
+  padding: 0.5rem ;
 }
 
 h2 {
@@ -70,42 +95,55 @@ h2 {
   padding:  1rem;
 }
 
-footer{
-  margin: 1rem 0 0 0;
-  padding: 2rem;
-  color: #ffffff;
-  background-color: #001b47;
-}
-
 /***** vista lista de Peliculas *****/
 .sort-by {
+  background-color: #1e427e ;
   display: flex;
-  justify-content: center;
-  padding: 0.5rem;
+  justify-content: space-around;
+  padding: 1rem;
   margin: auto;
+  margin-bottom: 2rem;
 }
 .sort-by button {
   padding: 0.5rem;
   margin: auto;
   border-radius: 1rem;
 }
+.sort-by button:hover {
+  background-color: #b0ceff ;
+  color: #ffffff;
+}
+
 .gallery {
   padding: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .movie-preview {
-  margin: 0.4rem;
-  width: 20%;
+  min-width: 200px;
+  margin: 0.5rem;
   min-height: 16rem;
   padding: 1rem;
   border-radius: 1rem;
   background-color:#b0ceff ;
 
 }
+
+.movie-preview a {
+  color: #000000;
+  text-decoration: none;
+
+}
+
+.movie-preview a:hover {
+  color: rgb(224, 1, 1);
+  font-style: none;
+
+}
+
+
 .movie-preview img {
   display: block;
   width:50%;
@@ -122,24 +160,36 @@ footer{
 }
 
 .show-detail{
+  width: fit-content;
   margin: 3rem auto;
-  border: 4px solid #b0ceff;
   border-radius: 1rem;
-  width: 60%;
-  display: flex;
-  align-items: flex-start;
+  box-shadow: 0 0 0 4px #b0ceff;
 
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+
+}
+
+.movie-detail a{
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgb(224, 1, 1);
 }
 
 .movie-detail {
-  width: 65%;
-  margin: 1rem;
+  padding: 1rem;
 }
 
 .movie-cover{
-  width: 35%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   background-color: #b0ceff ;
   padding: 1rem;
+  width: 300px;
 }
 .movie-cover img {
   display: block;

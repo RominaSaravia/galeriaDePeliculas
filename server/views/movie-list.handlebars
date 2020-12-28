@@ -1,28 +1,45 @@
-<h2>Peliculas</h2>
+<section class="sort-by col">
 
-<section class="sort-by">
-<button onclick="sortByName()">Ordenar por nombre</button>
-<button>Ordenar por año</button>
+  <div class="byName">
+  {{#if sorted}}
+  <button onclick="sortByName('{{sorted}}')">Ordenar por Nombre</button>
+  {{else}}
+  <button onclick="sortByName('ASC')">Ordenar por Nombre</button>
+  {{/if}}
+  </div>
+
+<div class="byYear"> 
+  {{#if yearsorted}}
+  <button onclick="sortByYear('{{yearsorted}}')">Ordenar por Nombre</button>
+  {{else}}
+  <button onclick="sortByYear('ASC')">Ordenar por Nombre</button>
+  {{/if}}
+</div>
+
 </section>
 
-<hr>
 
-<section class="gallery">
+<section class="gallery container-fluid p-0">
+  <div class="row justify-content-center">
   {{#each movie}}
+  <article class="movie-preview  col-3" >
 
-  <article class="movie-preview">
-
-    <a href="/movie/A-Z/{{this.id}}" class="movie-title"> {{this.title}} ({{this.year}})</a>
+    <a href="/movie/a-z/0-9/{{this.id}}" class="movie-title"> {{this.title}} ({{this.year}})</a>
     <img src="{{this.cover}}" alt="{{this.title}}">
 
   </article>
   {{/each}}
+  </div>
 </section>
 
 <script>
-  function sortByName() {
-    window.location.href = `/movie/A-Z/`
+
+  function sortByName(sorted) {
+    window.location.href = `/movie/${sorted}/`
   }
 
-  
+  function sortByYear(yearsorted) {
+    window.location.href = `/movie/-/${yearsorted}/`
+  }
+
 </script>
