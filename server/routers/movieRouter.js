@@ -10,7 +10,7 @@ movieRouter.get("/:sortby/:yearsortby/:id", (req, res) => {
   if (!req.params.id) {
     return
   }
-  movie.getMovieList((list) => {
+  movie.getAllMoviesdb((list) => {
     const movieFound = list.find(item => item.id == req.params.id);
 
     res.render("movie-detail", {
@@ -28,7 +28,7 @@ movieRouter.get("/:sortby/:yearsortby/", (req, res) => {
 
   //ASC
   if (req.params.yearsortby == "ASC") {
-    movie.getMovieList((list) => {
+    movie.getAllMoviesdb((list) => {
 
       orderedList = list.sort(function (a, b) {
         if (a.year > b.year) {
@@ -49,7 +49,7 @@ movieRouter.get("/:sortby/:yearsortby/", (req, res) => {
 
 
   if (req.params.yearsortby == "DESC") {
-    movie.getMovieList((list) => {
+    movie.getAllMoviesdb((list) => {
 
       orderedList = list.sort(function (a, b) {
         if (a.year > b.year) {
@@ -73,8 +73,6 @@ movieRouter.get("/:sortby/:yearsortby/", (req, res) => {
 
 })
 
-
-
 // GET devuelve la pagina ordenada por ASC o DESC
 movieRouter.get("/:sortby/", (req, res) => {
   if (!req.params.sortby) {
@@ -82,7 +80,7 @@ movieRouter.get("/:sortby/", (req, res) => {
   }
 
   if (req.params.sortby == "ASC") {
-    movie.getMovieList((list) => {
+    movie.getAllMoviesdb((list) => {
 
       orderedList = list.sort(function (a, b) {
         if (a.title > b.title) {
@@ -103,7 +101,7 @@ movieRouter.get("/:sortby/", (req, res) => {
 
 
   if (req.params.sortby == "DESC") {
-    movie.getMovieList((list) => {
+    movie.getAllMoviesdb((list) => {
 
       orderedList = list.sort(function (a, b) {
         if (a.title > b.title) {
@@ -127,13 +125,10 @@ movieRouter.get("/:sortby/", (req, res) => {
 
 })
 
-
-
 //GET a /movie/
 movieRouter.get("/", (req, res) => {
 
-  movie.getMovieList(list => {
-
+  movie.getAllMoviesdb(list => {
     res.render("movie-list", {
       movie: list
     });
